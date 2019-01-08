@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluation finale HTML CSS exo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/evaluation_final_exo.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <!-- le bouton burger -->
+        <div id="burgerBtn">
+            <div class="ligneBurger"></div>
+            <div class="ligneBurger"></div>
+            <div class="ligneBurger"></div>
+        </div>
+
+        <!-- le titre et sous titre -->
+        <div class="titleHeader">
+            <h1>Bienvenue à bord</h1>
+            <p>Location de voiture 24h/24 et 7j/7</p>
+        </div>
+
+        <!-- le menu déroulant du bouton burger -->
+        <div id="MenuBurger">
+            <p>Louer une voiture</p>
+            <p>Louer un utilitaire</p>
+            <p>Réserver un chauffeur</p>
+            <p>Découvrez nos agences</p>
+            <p>Mon compte</p>
+            <p>Contact</p>
+        </div>
+
+        <!-- la barre de recherche -->
+
+        <div class="container" id="searchBarre">
+            <div class="row" id="boxSearchGrey">
+                <div class="case col-sm-12 col-md-4 col-lg">
+                    <select name="adress" id="adressBtn">
+                        <option value="adresse">Adresse de départ</option>
+                    </select>
+                </div>
+                <div class="case col-sm-12 col-md-4 col-lg">
+                    <input type="text" class="datepicker" id="datepickerStart" placeholder="Début de location">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="case col-sm-12 col-md-4 col-lg">
+                    <input type="text" class="datepicker" id="datepickerEnd" placeholder="Fin de location">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="boxValue col-sm-12 col-md-12 col-lg">
+                    <div id="valueBtn">Valider mar recherche</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- the results barre -->
+        <div id="resultBarre">
+            <p>7 résultats</p>
+            <select name="Prix" id="priceUp">
+                <option value="Prix">Prix croissant</option>
+                <option value="Prix">Prix décroissant</option>
+            </select>
+        </div>
+
+        <section class="row">
+            <img src="assets/img/vehicule1.png" alt="Peugeot 208">
+            <div class="modelDescription">
+                <h2>Peugeot 208</h2>
+                <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0,5/km supplémentaire).<br>
+                    999 € - Agence de Paris</p>
+                <button class="btn colorBtnModel"> Réserver et Payer</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <img src="assets/img/vehicule2.png" alt="Peugeot 208">
+            <div class="modelDescription">
+                <h2>Ford Focus</h2>
+                <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0,5/km supplémentaire).<br>
+                    999 €</p>
+                <button class="btn colorBtnModel"> Réserver et Payer</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <img src="assets/img/vehicule3.png" alt="Peugeot 208">
+            <div class="modelDescription">
+                <h2>Audi A1</h2>
+                <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0,5/km supplémentaire).<br>
+                    999 € - Agence de Paris</p>
+                <button class="btn colorBtnModel"> Réserver et Payer</button>
+            </div>
+        </section>
+
+        <section class="row">
+            <img src="assets/img/vehicule4.png" alt="Peugeot 208">
+            <div class="modelDescription">
+                <h2>Opel Mokka</h2>
+                <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0,5/km supplémentaire).<br>
+                    999 € - Agence de Paris</p>
+                <button class="btn colorBtnModel"> Réserver et Payer</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="imgAgency"> </div>
+        <div id="AgencyAdress">
+            <p>Notre Agence de <strong>Paris</strong><br>
+                300 boulevard de vaugirard, 75015 Paris <br>
+                Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
+                01 49 78 21 33 <br>
+                contact@vtc.com
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="assets/js/evaluation-final-exo.js"></script>
+</body>
+
+</html>

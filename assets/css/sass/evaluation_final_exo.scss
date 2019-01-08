@@ -1,0 +1,27 @@
+/* Font List_________________________ */
+/* font-family: 'Cabin', sans-serif; */
+
+header{    
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    height: 850px;
+}
+
+.titleHeader{
+    color : #FFFFFF;
+    text-align: center;
+    margin : auto;
+    font-family: 'Cabin', sans-serif;
+    position : relative;
+    top : 90px;
+    
+}
+h1{
+    font-size: 3rem;
+}
+
+.titleHeader p{
+    font-size: 1.2rem;
+}
+
+/* le bouton burger */

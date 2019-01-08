@@ -1,0 +1,225 @@
+/* Font List_________________________ */
+/* font-family: 'Cabin', sans-serif; */
+
+/* color used */
+/* grey : rgb(127, 140, 141)*/
+/* green : rgb(39, 174, 96) */
+
+/* body{
+    width : 2400px;
+} */
+
+header {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    height: 850px;
+    margin-bottom: 20px;
+}
+
+.titleHeader {
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto;
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    top: 90px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.titleHeader p {
+    font-size: 1.2rem;
+}
+
+/* le bouton burger */
+
+#burgerBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: solid 2px #7f8c8d;
+    border-radius: 8px;
+    width: 60px;
+    height: 45px;
+    padding: 5px;
+}
+
+.ligneBurger {
+    border: solid 2px #7f8c8d;
+    width: 80%;
+    margin: 5px auto;
+}
+
+/* le menu burger */
+
+#MenuBurger {
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 10px;
+    top: 80px;
+    left: -1px;
+    width: 100%;
+    display: none;
+}
+
+#MenuBurger p {
+    color: #7f8c8d;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* la barre de recherche */
+
+#searchBarre {
+    position: relative;
+    /* width: 55%; */
+    top: 500px;
+}
+
+#adressBtn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 4px 0px;
+}
+
+.case {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 10px;
+    background-color: rgba(189, 195, 199, 0.7);
+    color: white;
+}
+
+.boxValue {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(39, 174, 96, 0.5);
+}
+
+#valueBtn {
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.datepicker {
+    background-color: white;
+    position: relative;
+    top: 4px;
+    height: 40px;
+    width: 89%;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 10px;
+}
+
+i {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 8px;
+    color: black;
+    background-color: #ecf0f1;
+    width: 10%;
+    height: 38px;
+    position: relative;
+    top: 6px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* the results barre-------------------- */
+
+#resultBarre {
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+#resultBarre p {
+    float: left;
+    font-size: 1.2rem;
+}
+
+#priceUp {
+    float: right;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    box-shadow: #7f8c8d 0px 1px 0px;
+    padding: 5px;
+}
+
+/* les sections avec modèles des voitures */
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+section {
+    clear: both;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: solid #bdc3c7 1px;
+}
+
+img {
+    float: left;
+    margin-right: 130px;
+}
+
+.modelDescription {
+    width: 60%;
+}
+
+.colorBtnModel {
+    background-color: rgb(39, 174, 96);
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+/* Le Footer ----------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+#imgAgency {
+    background-image: url(../img/agence_300px.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 170px;
+    margin: 0px 40px;
+}
+
+#AgencyAdress p {
+    font-size: 1.3rem;
+    margin: 0px 40px;
+}
+
+@media screen and (max-width : 500px) {
+    #searchBarre {
+        top: 300px;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .modelDescription {
+        width: 95%;
+    }
+
+    #AgencyAdress p {
+        text-align: center;
+    }
+    
+}
